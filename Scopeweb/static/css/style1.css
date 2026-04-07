@@ -1,0 +1,1183 @@
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    body{
+        background-image: url(../images/scopeindia-bkg.jpg);
+    
+    .viga-regular {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+   
+
+
+    .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    }
+    #float_icons{
+       
+        position: fixed;
+        right: 5px;      
+        top: 5px;      
+        width: 45px;
+        height: auto;
+        display: grid;
+        gap: 0px;        
+        z-index: 9999;  
+        
+        
+        
+    }
+    #float_icons img{
+        width:45px;
+        border-color: white;
+        
+    }
+    /* -------------------------------------------------------------end---float icons------------------------------------------------------------------------------- */
+    /* ---------------------------------------------------------------nav---------------------------------------------------------------------------------------------- */
+    #container_navigation{
+        
+        height:170px ;
+        background-image: url(../images/scopeindia-bkg.png), linear-gradient(90deg, rgb(4 11 45) 0%, #04145f 100%);
+    }
+    #logo img{
+        width: 180px;
+        float: left;
+        margin: 20px 0 0 20px;
+        position: relative;
+    }
+    #rate img{
+        
+        width:200px;
+        margin-top: 20px ;
+        padding: 0;
+        
+        
+        
+    }
+    #rate{
+        
+        position: sticky;
+        margin-top:-152px;
+        float: right;
+        margin-right: 40px;
+        
+    }
+
+    #nav_attr{
+        float: right;
+        margin-top:130px;
+        margin-right: 20px;
+    
+    }
+    
+    #nav_attr nav  a {
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight:600;
+    color: rgba(255, 255, 255, 0.748);
+    right: 50px;    
+    text-decoration: none;
+    position: relative;
+    padding: 5px 6px 5px 6px;
+    border-radius: 5px;
+    
+   
+    
+    }
+    #nav_attr nav a:hover
+    {
+        color: #eeaf10;
+        background-color: #9295a260;
+        border: 1px solid #9da5ca;
+        font-size: 12px;
+        border-radius: 5px;
+
+    }
+    #nav_attr nav #reg{
+        background-color: red;
+        padding: 5px 7px 5px 7px;
+        border-radius: 5px;
+        color: aliceblue;
+    }
+    #nav_attr nav  #reg:hover{
+        background-color: #9295a260;
+        border: 1px solid #9da5ca;
+        font-size: 12px;
+    }
+    #nav_attr nav a.active{
+        color: #eeaf10;
+        background-color: #9295a260;
+        border: 1px solid #9da5ca;;
+    
+        border-radius: 5px;
+    }
+    #texts{
+        background: linear-gradient(45deg, #e2e2e2, #fff)
+    }
+    }
+
+    #texts h1{
+    color:#eeaf10;
+    text-align: center;
+    margin-top: -35;
+    padding: 7px 0px 7px 30px;
+    background: linear-gradient(60deg, #04145f 0%, rgb(4 13 55) 100%);
+
+    border-style: solid inset;
+    border-color:#c7ac20 #04145f #04145f #04145f ;
+    border-width: 1.5px;
+    font-size: 35px;
+    font-family: Viga;
+    font-weight: normal;
+
+    }
+    #texts h2{
+        text-align: center;
+        margin: 15px 0 15px 0;
+        font-family: "viga";
+        font-weight: normal;
+        font-size: 25.2px;
+        color:#14267c;
+        
+    }
+    #texts h3{
+        padding:15px 15px 15px 15px;
+        font-family: "viga";
+        font-weight: normal;
+        font-size: 17px;
+        margin-top: -21px;
+        color:#0b27a8;
+        
+    }
+    #cert_companies{
+        padding: 15px 0px 20px 0;
+        border-top: 5px solid #04145f; ;
+        background: linear-gradient(45deg, #e2e2e2, #fff)
+    }
+
+    #cert_companies{
+        padding: 15px 0 15px 0;
+    }
+    #cert_companies h4{
+        font-size: 19px;
+        font-family:"viga";
+        text-align: center;
+        color:#14267c;
+        font-weight: normal;
+    }
+    #grid_images img{
+    
+    width:95.39px;
+    height: 35.6px;
+    padding:5px 0 0 0;
+    display: block;
+    margin: auto;
+    place-items: center;
+    }
+    #grid_images{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+        text-align: center;
+        padding: 15px 0 0 0;
+        margin-top: -14px;
+    }
+    #career{
+        background:linear-gradient(90deg, rgb(11 23 81) 0%, rgb(10 29 121) 31%); 
+        padding: 0 55px 0 55px;
+    }
+    .parent{
+        padding: 30px;
+    }
+    #career h2{
+        font-family: "viga";
+        color: #fecb00;
+        font-size: 35px;
+        padding: 20px 0 20px 0;
+    }
+    #career_txt{
+        color: #e2e2e2;
+        font-family: "viga";
+        width: 600px;
+        
+    }
+    #career_txt p{
+    margin: 0 0 26px 0;
+    font-size: 18px;
+    }
+    #career_txt li{
+        list-style-type: none;
+        display: flex;
+    }
+    #career_txt li a{
+    text-decoration: none;
+    color: #e2e2e2;
+
+    font-size: 16px;
+    display: block;
+    }
+    #career_txt li svg{
+    color: rgb(234, 179, 8);
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    .career_txt_grid{
+
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 20px; 
+    
+        
+    }
+    #asawhole{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #career .flyer1{
+    background:linear-gradient(90deg, rgb(11 23 81) 0%, rgb(10 29 121) 31%); 
+    padding: 24px;
+    border:2px solid #fecb00;
+    border-radius: 30px 0 30px 0;
+    width: 273px;
+    height: 86px;
+    transition: all 0.4s ease;
+    transform: scale(1);
+    }
+
+    #career .flyer1:hover {
+        
+    transform: scale(1.05); 
+    
+    }
+    #career .flyer2{
+    background:linear-gradient(90deg, rgb(11 23 81) 0%, rgb(10 29 121) 31%); 
+    padding: 24px;
+    border:2px solid #fecb00;
+    border-radius: 30px 0 30px 0;
+    transition: all 0.4s ease;
+    transform: scale(1);
+    width: 273px;
+    height: 121px;
+    }
+     #career .flyer2:hover {
+        
+    transform: scale(1.05); 
+    
+    }
+
+    #career .flyer1  h3{
+        color: #fecb00;
+        font-family: "viga";
+    }
+    #career .flyer2  h3{
+        color: #fecb00;
+        font-family: "viga";
+    }
+    #career .flyer1 p{
+        color: white;
+        font-family: "viga";
+    }
+    #career .flyer2 p{
+        color: white;
+        font-family: "viga";
+    }
+    #itsaflyer{
+        background-color: #0b1e7d;
+        width: 600px;
+        height: 340px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 17px;
+        row-gap: 0.5px;
+    }
+    #placement_highlights{
+        height: auto;
+
+        margin: 0;
+        
+        
+
+    }
+    #plhigh {
+        
+        background: linear-gradient(45deg, #e2e2e2, #fff)
+        
+    }
+    #plhigh h2{
+        padding-top: 5px;
+        font-size: 30px;
+        font-family: "viga";
+        text-align: center;
+        color:#14267c;
+    }
+    .highlights_grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding:  20px 30px 30px 30px;
+        
+
+    }
+    .highlights_grid div{
+        padding: 15px;
+        width: 400px;
+        height: 100px;
+    margin-left: 25px;
+        box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #fff;
+        border-radius: 10px;
+        
+    }
+    .highlights_grid span{
+        color: #e5c000;
+        font-size: 40px;
+        font-family: "viga";
+    }
+    .highlights_grid p{
+        font-family: "viga";
+        margin:10px 2px 10px 2px;
+        font-size: 18px;
+    }
+
+    /* ><--------------------------------AI-------------------------- */
+    #ai_study .parent{
+    text-align: center;
+     background-color: #04145f;
+    }
+    #ai_study .parent h2 {
+    font-family: "viga";
+    font-size: 45px;
+    margin-bottom: 15px;
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(187, 151, 39) 29%, rgb(249, 245, 146) 50%, rgb(215, 167, 41) 76%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    }
+
+    #ai_study .parent  h3{
+        font-family: "viga";
+    color: #0b1e7d;
+    background: linear-gradient(0deg, rgb(187 151 39) 3%, rgb(249 245 146) 56%, rgb(215 167 41) 100%);
+    display: inline-block;
+    font-size: 23px;
+    margin-bottom: 22px;
+    padding: 10px 20px;
+    border-radius: 20px 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+    #ai_study .parent p{
+        font-family: "viga";
+        color: white;
+        font-size: 20px;
+        padding:20px
+    }
+    #AI_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+    
+    }
+    #ai_bk{
+        background-image: url(../images/data-science-ai-course-scopeindia.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 720px;
+        
+    }
+
+    #ai_studypic{
+        width: 720.4px;
+        height: 377px;
+        text-align: start
+        ;
+    }
+    #robo{
+        width: 432.24px;
+        height: 432.24px;
+        float: left;
+        margin-top: -20px;
+        margin-left: -20px;
+        animation: roboanimation 5s ease-in-out infinite;
+       
+    }
+    .ai_txt_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+       column-gap: 30px;
+        row-gap: 30px;
+    }
+    #ai_courseplan{
+        
+        margin: 0 20px 0 20px;
+        padding: 30px 20px 30px 20px;
+        border: 1px solid  rgb(230, 223, 21);
+        width: 620px;
+        height: 300px;
+        border-radius: 20px;
+        background-color: #04145f;
+}
+    
+    .ai_txt_grid li{
+        font-family: "viga";
+        list-style:none;
+        text-align: left;
+    }
+    .ai_txt_grid  a{
+        color: white;
+        text-decoration: none;
+
+    }
+    .ai_txt_grid  svg{
+        color: rgb(230, 223, 21);
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;}
+    
+    @keyframes roboanimation{
+        0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+    }
+    /* ------------------end of ai-------------------------- */
+    /* -----------------------------------------Full Stack------------------------ */
+    .full-stack{
+        background:linear-gradient(45deg, #e2e2e2, #fff);
+        font-family: "viga";
+        padding: 20px;
+    }
+
+    .full-stack .parent h2{
+        font: 36px "viga";
+        margin-bottom: 50px;
+        padding: 5px;
+        color: #0b1e7d;
+        font-weight: bold;
+    }
+    .full-stack-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+
+    }
+    .full-stack-grid img{
+     width: 700px;  
+     height: 366px;
+
+    }
+    #full{
+        border:10px;
+         box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         padding: 10px 0px 10px 40px;
+         background-color: white;
+         width: 600px;
+         border-radius: 10px;
+    }
+    #full h3{
+        margin: 0px 0px  12px 0;
+        padding: 20px 10px;
+        font-size: 25px;
+        font-family: "viga";
+        font-weight: bold;
+    }
+    #pathway{
+        font-size: 17px;
+        font-family: "viga";
+        color:black;
+        text-decoration: none;
+        
+    }
+    #pathway a{
+        text-decoration: none;
+    }
+    #pathway ol{
+        display: grid;
+        row-gap: 20px;
+        font-weight: bold;
+        list-style:none;
+    }
+    #pathway li{
+        display:flex;
+    }
+    
+    #pathway h4{
+         color:black;
+        text-decoration: none;
+        margin: 0 0 6px 0 ;
+        
+    }
+    #pathway  p{
+        color: rgb(90, 85, 85);
+        margin-top: -20px;
+       
+    }
+    #pathway .sub{
+        margin-left: 20px;
+        display: grid;
+       
+
+    }
+    #pathway #imge{
+         background-color: #eeaf10;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 10px;
+    }
+     #pathway span {
+        background-color: #eeaf10;
+        text-align: center;
+        width: 17px;
+        height: 30px;
+        border-radius: 50px;
+        padding:3px 10px 3px 10px;
+        display: grid;
+
+     }
+     /* -----------------------------------end----------------------- */
+     .no_coding{
+        background-color: #0A1C78;
+     }
+     .no_coding .parent h2{
+        font: 30px "viga";
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+        padding: 30px 0 30px 0;
+        font-weight: bold;
+     }
+     .no_coding .parent h2 span{
+        font-size: 50px;
+        color:#fecb00;
+     }
+     .no_coding .parent .full-stack-grid img{
+        width: 720.4px;
+        height: 381px;
+     }
+     .testingcontent{
+        padding: 20px;
+        width: 680.4px;
+        height: 341px;
+     }
+     .testingcontent a{
+        text-decoration: none;
+     }
+     .no_coding .parent h3{
+        text-align: center;
+        font: 23px "viga";
+        color:rgb(11, 30, 125);
+        margin: 0 0 22px  50px;
+        padding: 10px 5px; 
+        background-color: #fecb00;
+        border-radius: 20px 5px 20px 5px;
+        width: 531px;
+        font-weight: bold;
+
+     }
+     .comm_grid{
+        padding: 10px;
+        margin: 20px 0;
+     }
+     .comm_grid ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        row-gap:20px ;   
+        list-style: none;
+      }
+     .comm_grid li{
+        
+        color: white;
+        font: 19px "viga";
+        margin: 10px 0;
+        display: flex;
+     }
+     .comm_grid li svg{
+         color: rgb(230, 223, 21);
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+     }
+     /* ---------------------------------end------------------------ */
+     #devops{
+        background-color: white;
+
+     }
+     #devops .parent h2{
+        font: 35px "viga";
+        text-align: center;
+        font-weight: bold;
+        color: #0b1e7d;
+        margin-bottom: 40px;
+     }
+     #dev_grid{
+        background-color:#dededec7;
+        padding: 40px 20px 20px 0;
+        border-radius: 15px;
+        width: 700.4px;
+        height: 320px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+     }
+     #dev_grid a{
+        text-decoration: none;
+     }
+     #dev_grid h4{
+        font: 26px "viga";
+        color: white;
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        background:linear-gradient(90deg, rgb(217 18 111 / 45%) 0%, rgb(217 18 111) 10%);
+        width: 420px;
+        border-radius: 0 30px 30px 0;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+        
+     }
+     #dev_grid ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        list-style: none;
+        margin: 0 20px;
+
+     }
+     #dev_grid  li{
+        font: 14px "viga";
+        height: 25px;
+        color: #14267c;
+        font-weight: bold;
+        margin: 10px 0 10px 0;
+        display:flex;
+     }
+     #dev_grid  li svg{
+          color: rgb(230, 223, 21);
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        color:rgb(217 18 111) ;
+     }
+     #devops .parent .full-stack-grid img{
+        width: 720.4px;
+        height: 381px;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+     }
+/* ---------------------end------------------------------------------- */
+#business_intelligence{
+     background:linear-gradient(45deg, #e2e2e2, #fff);
+}
+#business_intelligence .parent h2{
+        font: 37px "viga";
+        text-align: center;
+        font-weight: bold;
+        color: #0b1e7d;
+        margin-bottom: 40px;
+     }
+#business_intelligence h4{
+    text-align: center;
+        font: 26px "viga";
+        color:rgb(11, 30, 125);
+        margin: 0 0 22px 80px;
+        padding: 10px 5px; 
+        background-color: #fecb00;
+        border-radius: 20px 5px 20px 5px;
+        width: 445px;
+        font-weight: bold;
+    
+}
+#business_intelligence  .comm_grid li{
+    color: black;
+    display: flex;
+    
+}   
+#business_intelligence  .comm_grid li svg{
+    color: #e0aa0c;
+    width: 20px;
+}
+/* -------------------------------------------end----------------------------------------------- */
+#misson_vision{
+    background-color: #0A1C78;
+    padding: 10px;
+   
+   
+}
+#sub_m_v{
+    padding: 30px 30px 0 30px ;
+    
+}
+
+#sub_m_v  h2{
+    text-align: center;
+    font: 35px "viga";
+    color:#e5c000;
+    font-weight: bold;
+    margin: 20px
+    
+}
+#sub_m_v .full-stack-grid {
+    padding: 20px;
+}
+
+#sub_m_v .full-stack-grid .content_missionandvission{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 620px;
+    height: auto;
+     margin: 0 0 20px 0;
+    padding: 30px;
+
+    
+}
+.content_missionandvission{
+    margin: 0 0 20px 0;
+    padding: 30px;
+    border: 2px solid #e5c000;
+    border-radius: 20px;
+   
+}
+.content_missionandvission h3{
+    font: 25px "viga";
+    color: white;
+    margin: 0 0 20px 0;
+}
+.content_missionandvission p{
+    font: 15px "viga";
+    color: white;
+    margin: 0 0 20px 0;
+    line-height: 20x;
+
+}
+.content_missionandvission ul{
+    font: 15px "viga";
+    color: white;
+    display: grid;
+    list-style: none;
+    margin-top: -10px;
+    
+    
+}
+.content_missionandvission li{
+    margin: 10px 0 10px 0;
+    display: flex;
+    height:15px
+}
+.content_missionandvission li svg{
+    color: #e0aa0c;
+    width: 20px;
+   padding: 0 0 0 ;
+   margin: 0 20px 0 0 ;
+   margin-top: -10px;
+}
+.content_missionandvission img{
+    width: 40px;
+    height: 40px;
+}
+.content_missionandvission svg{
+    width: 40px;
+    height: 40px;
+    
+}
+.content_missionandvission #svgg{
+    background-color: #e5c000;
+    padding:  8px 10px;
+    border-radius: 50px;
+    width: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* ------------------------------footer--------------------------------------------- */
+#footer{
+    color: white;
+    background: #0a1d7b url("../images/scopeindia-blue-bkg.webp") repeat-x;
+    text-align: center;
+    font-family: "poppins";
+    font-size: 14px;
+    padding: 10px;
+
+} 
+#footer p{
+    margin: 14px;
+} 
+#footer p a{
+    text-decoration: none;
+    color: white;
+    column-gap: 5px;
+    margin: 10px 15px;
+    
+}
+/* -------------------------------------end-------------------------------------------- */
+
+/* -------------------------------------about-------------------------------------- */
+
+
+/* --------------------------------------contact----------------------------------------- */
+#contact_us{
+    
+    padding: 10px 0px;
+    background-color: #04145f;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#contact_info{
+    background-image: url(../images/contact-scope-india.webp);
+    width:485px;
+    height: 324.5px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color:#c7ac20;
+    
+}
+#contact_scope {
+    background-color: rgba(0, 0, 0, 0.659);
+    margin-top:200px;
+    padding:10px
+
+}
+#contact_scope h2 {
+    font: 21.2px "viga";
+    color: white;
+    text-decoration: none;
+}
+#contact_scope p{
+    font: 14px "viga";
+    color:white;
+}
+.details{
+    background-color: whitesmoke;
+    width:487px;
+    height: 324.5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color:#c7ac20;
+    margin: 10px 5px;
+    padding: 20px 0 20px 0;
+}
+.details div{
+    padding: 0px 20px;
+}
+.details h3{
+    color:#e10c0c;
+    font: 20px "viga";
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.details p{
+    color: #0A1C78;
+    font:17px "poppins";
+    margin-top:10px;
+}
+.details h4 {
+    margin:10px 0;
+    padding:15px 10px;
+    border-radius: 5px;
+    width: 407px;
+    font: 17px "viga";
+    background-color:  #253169;
+    color: white;
+    
+}
+.details h4 a{
+    text-decoration: none;
+    color: white;
+}
+/* -------------------------------------------------------end--------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------about--------------------------------------------------------------------------------- */
+#about_us #about_txt{
+    background-color:#0c1d72;
+    height: auto;
+    padding:  10px 60px;
+    text-align: center;
+}
+#about_txt h2{
+    text-align: center;
+    font: 50px "viga";
+    padding: 20px ;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e0aa0c;
+}
+#about_txt h3{
+    text-align: center;
+    font: 36px "viga";
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+}
+#about_txt p{
+    font: 16px "viga";
+    color: white;
+    padding: 10px 22px;
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 1px;
+    
+}
+#about_txt #abt span{
+    font-weight: bold;
+    font-size: 15px;
+}
+#about_txt span{
+    font: 13px "viga";
+    text-align: center;
+    
+
+}
+#about_txt img{
+    width:275px;
+    height: 105px;
+    margin: 20px 0 0;
+    padding: 10px;
+}
+#about_txt span p{
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+
+}
+#ourstory{
+    padding: 20px;
+    background-color: white;
+}
+#ourstory h2{
+    text-align: center;
+    font: 36px "viga";
+    color: #04145f;
+    font-weight: bold;
+    padding: 20px 0;
+
+}
+#line{
+    width: 130px;
+    height: 5px;
+    margin-left: 675px;
+    margin-right: 675px;
+    background-color:  rgb(37 99 235);
+    margin-bottom: 25px;
+}
+#ourstory_grid{
+    padding: 30px;
+    margin: 0 20px;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    
+}
+#content_left{
+    padding: 20px;
+}
+
+
+#foundation{
+    width: 600px;
+    height: auto;
+    margin:0 0 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    border-radius: 10px;
+    padding: 20px;
+}
+#foundation h3{
+    font: 22px "viga";
+    color:#04145f;;
+    padding: 0 0 20px 0;
+    font-weight: bold;
+
+
+}
+#foundation p{
+    font: 14px "viga";
+    color:#0b27a8;
+    padding: 0 0 15px 0;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+   
+
+}
+
+#foundation img{
+    width: 400px;
+    height: auto;
+    margin:20px 0 0  15% ;
+    
+    
+}
+.evo{
+    width: 600px;
+    height: auto;
+    margin:0 0 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    border-radius: 10px;
+    padding: 20px;
+}
+.evo h3{
+    font: 22px "viga";
+    color: #04145f;;
+    padding: 0 0 20px 0;
+    font-weight: bold;
+}
+.evo p{
+    font: 14px "viga";
+    color:#0b27a8;
+    padding: 0 0 15px 0;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+#content_right{
+     padding: 20px;
+}
+ #gif img{
+    border-radius: 30px;
+    padding:  0 20px 20px;
+     margin:0 0 30px 0;
+    margin-left: -20px;
+}
+#wrapper {
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+#high {
+  background-color: white;
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19); 
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+
+#high_light {
+  background-color: rgb(37 99 235 / 1);
+  width: 640px;
+  height: 270px;
+  margin-top: -60px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19); 
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  
+  z-index: 1;
+}
+
+.iconbox_ {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.iconbox_ .ssvg {
+  height: 50px;  
+  width:50px;
+  background-color: #e6f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconbox_ svg {
+  padding: 10px;
+  height: 30px;
+}
+.iconbox_ path{
+    width: 30px;
+  height:26px;
+}
+
+.iconbox_ h4 {
+  margin: 0;
+  font: 14px "viga";
+  font-weight: bold;
+  color: #001d4a;
+}
+
+.iconbox_ p {
+  margin-left: -10px ;
+  font: 14px "viga";
+  color: #333;
+  
+}
+/* ------------------------------------------------------------------end of about-------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------course------------------------------------------------------------------------------ */
+.course_catog{
+    background-color: #04145f;
+}
+.course_catog h2{
+    padding: 5px;
+    text-align: center;
+    font: 27px "viga";
+    color: #04145f;
+    background-color: #fdd51c;
+    border-top: 5px solid #c7ac20;
+
+}
+.course_catog a{
+    text-decoration: none;
+    
+    background: white url(../images/right-arrow.png)no-repeat;
+    background-size:20px ;
+    background-position: 95%;
+    padding: 20px;
+    width: 445.56px;
+     border: 2px solid #c7ac20;
+     border-radius: 10px;
+    
+     
+}
+.course_grid {
+    padding: 20px 10px 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 25px;
+    column-gap: 15px;
+    width: 445.56px;
+   
+}
+.course_catog h3{
+    
+    font: 21px "viga";
+    color:#14267c;
+    
+}
+.course_catog a:hover{
+    background-color: #fff9dc;
+    color:#14267c;
+
+}
+.course_catog img{
+    width: 20px;
+    height: 30px;
+    float: right;
+    margin-top:-30px;
+}
+.course_catog img:hover{
+    background-color: #fff9dc;
+}
+/* ----------------------------------------------------end---------------------------------------------------- */
+
+ /* -----------------------------------------------------ddashboard------------------------------------------------------------ */

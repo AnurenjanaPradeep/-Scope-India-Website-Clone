@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <title>Document</title>
+    <style>
+        
+    #popup-container {
+    position: fixed;
+    top: 30px;
+    margin-left: 45%;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Popup box */
+.popup {
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: popin 1s forwards;
+}
+
+/* Colors based on message type */
+.popup.info {
+    background: #10224f;
+}
+.popup.success {
+    background: #06a026;
+}
+.popup.warning {
+    background: #e0a400;
+}
+.popup.error {
+    background: #cc0000;
+}
+
+/* Smooth animation */
+@keyframes popin {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+    </style>
+</head>
+<body >
+    <div id="popup-container">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="popup {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+    <section class="stu_dashboard"style="background-color: white;">
+        <!-- <div>
+           <div id="float_icons">
+        <a href="#"><img src="{% static 'images\gallery-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\instagram-scope-india.png' %}"></a>
+        <a href="#"><img src="{% static 'images\callnow-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\whatsapp-scope-india.webp' %}"></a>
+        
+    </div> -->
+   
+        <div class="grid-dash" style="display: grid;grid-template-columns: auto auto;">
+        <div id="container_navigation2">
+             <a href="{% url 'home' %}"><img width="200px" src="{%static 'images\scopeindia-logo.webp'%}"></a>
+            <ul id="nav_ul">
+                <li>
+                    
+                     <a class="active" href="{% url 'dashboard' %}"  >PROFILE</a>
+                   
+                </li>
+                <li>
+                     <a href="{% url 'course_search' %} " >COURSE</a>
+                </li>
+                 <li>
+                     <a href="{% url 'home' %}" >HOME</a>
+                </li>
+                <li style="margin-top:300px ;">
+                    <a href="{% url 'studentlogin' %}"> LOGOUT</a>
+                </li>
+            </ul>
+        </div>
+        <div id="profile-dash">
+            <div id="profile-head">
+            <!-- <h2>
+                Welcome {{data.full_name}}
+            </h2> -->
+        <div style="display: flex;">
+         <div>
+            <img id="profile-pic" src="{{data.photo.url}}" >
+        </div>
+        <div style="margin-top: 60px;">
+        <h3>
+            {{data.full_name}}
+        </h3>
+        </div>
+        </div>
+        <a href="{% url 'profile' %}">Edit</a>
+        </div>
+        <div class="profile-grid">
+            <div class="profile-div">
+                <h4>
+                    PERSONAL DETAILS
+                </h4>
+                <p>Name: {{data.full_name}}</p>
+                <p>Date of Birth: {{data.date_of_birth}}</p>
+                <p>Gender: {{data.gender}}</p>
+                <p>Qualification: {{data.educational_qualification}}</p>
+                <p>Hobbies: </p>
+                <ul style="margin-left: 15px;">
+                    {% for i in data.hobbies %}
+                        <li style="list-style: circle;">{{ i }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="profile-div">
+                <h4>
+                    CONTACT DETAILS
+                </h4>
+                <p>Contact number: {{data.mobile_no}}</p>
+                <p>Email: {{data.email}}</p>
+
+             
+            </div>
+            
+               <div class="profile-div">
+                <h4>
+                    GUARDIAN'S DETAILS
+                </h4>
+                <p>Guardian name: {{data.guardian_name}}</p>
+                <p>contact number: {{data.guardian_phone}}</p>
+                <p>Occupation: {{data.guardian_occupation}}</p>
+            </div>
+            <div class="profile-div">
+                   <h4>
+                    ADDRESS
+                </h4>
+                <p>City: {{data.city}}</p>
+                <p>State: {{data.state}}</p>
+                <p>Pin-code: {{data.pin_code}}</p>
+                 <p>Country: {{data.country}}</p>
+            </div>
+            <div class="profile-div">
+                <h4>
+                    CLASS DETAILS
+                </h4>
+                
+                <p>Training mode: {{data.training_mode}}</p>
+                <p>Location: {{data.location}}</p>
+                <p>Time:</p>
+                <ul style="margin-left: 15px;">
+                    {% for time in data.timing %}
+                        <li style="list-style: circle;">{{ time }}</li>
+                    {% endfor %}
+                </ul>
+                
+            </div>
+             <div class="profile-div">
+                <h4>
+                    COURSES
+                </h4>
+                
+                
+                <p>Enrolled Courses:</p>
+                <ul style="margin-left: 15px;">
+                    {% for course in course %}
+                        <li style="list-style: circle;">{{ course.course_name }}</li>
+                    {% endfor %}
+                </ul>
+                
+            </div>
+            
+        </div>
+        <a href="{% url 'studentlogin' %}"> LOGOUT</a>
+        </div>
+
+        </div>
+    </section>
+    <script>
+    setTimeout(function() {
+        let popups = document.querySelectorAll(".popup");
+        popups.forEach(function(popup) {
+            popup.style.transition = "all 0.5s ease";
+            popup.style.opacity = "0";
+            popup.style.transform = "translateY(-20px)";
+            setTimeout(() => popup.remove(), 300);
+        });
+    }, 3000);  // Close after 3 sec
+</script>
+</body>
+</html>

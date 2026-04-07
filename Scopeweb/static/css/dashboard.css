@@ -1,0 +1,179 @@
+  .viga-regular {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#container_navigation2
+ {
+    padding: 20px;
+    background-image: url(../images/scopeindia-bkg.png), linear-gradient(90deg, rgb(4 11 45) 0%, #04145f 100%);
+    text-align: center;
+    max-width: 300px;
+    height: 100%;
+    position:fixed;
+ }
+
+ #container_navigation2 ul{
+    margin-top: 50%;
+ }
+ #container_navigation2 li{
+    color: white;
+    font: 20px "sans-serif";
+    list-style: none;
+    margin-bottom: 8px;
+    
+ }
+  #container_navigation3 ul{
+    margin-top: 100%;
+ }
+ #container_navigation3 li{
+    color: white;
+    font: 16px ;
+    list-style: none;
+    margin-bottom: 8px;
+    
+ }
+ #nav_ul li a{
+      color: white;
+      text-decoration: none;
+    font: 17px "viga";
+    transition: all 0.5s ease-in;
+    transform: scale(1);
+ }
+  #nav_ul li a:hover{
+      color: rgb(195, 184, 64);
+      transform: scale(1.1);
+      border-bottom: 2px solid  rgb(195, 184, 64);
+ }
+  #nav_ul li a.active{
+      color: rgb(195, 184, 64);
+      border-bottom: 2px solid  rgb(195, 184, 64);
+ }
+ 
+ #profile-dash{
+    padding:0 30px 0 0;
+     background-color: white;
+     font-family: "viga";
+    margin-left: 240px;
+    width: 1250px;
+ }
+ #profile-head h3{
+    color: #04155f93;
+ }
+ #profile-head{
+    border-bottom: 1px solid #04145f;
+    background-image: url(../images/scopeindia-bkg.jpg);
+    margin-left: 20px;
+    padding: 20px;
+ }
+ #profile-head h2{
+    padding: 10px;
+    margin-bottom: 30px;
+    color: #04155f93;
+ }
+ #profile-head h3{
+    padding: 10px;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family:sans-serif;
+    color: #04145f;
+    text-shadow: 2px 2px 2px rgb(156, 171, 198);
+ }
+ #profile-head a{
+   float: right;
+   text-decoration: none;
+ }
+  #profile-head #profile-pic{
+    width: 220px;
+    height: 200px;
+    border: 2px solid ;
+    border-radius:90%;
+    box-shadow: 2px 2px 6px black;
+  }
+ .profile-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    column-gap: 30px;
+    background-color: white;
+    padding:  30px 60px;
+    width: 1100px;
+   
+ }
+ .profile-div{
+     width:500px;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 2px 2px 15px  black;
+     padding: 20px;
+     border-radius: 20px;
+     transition: all 1s ease;
+     transform: scale(1);
+ }
+ .profile-div:hover{
+   transform: scale(1.03);
+ }
+ .profile-div h4{
+    margin-bottom: 10px;
+    color: #04145f;
+     border-bottom: 1px solid #04145f;
+ }
+ .profile-div p{
+    margin-bottom: 8px;
+ }
+#profile-dash a{
+   float: right;
+   text-decoration: none;
+ }
+ /* update form */
+ .update #upform{
+   
+   padding: 50px 230px;
+   background-color:  #151f4a;
+ }
+ #formdiv{
+   display: grid;
+   grid-template-columns: auto auto;
+   column-gap: 100px;
+   margin-top: 10px;
+ }
+ #regdiv{
+   padding:30px;
+   border-radius: 10px;
+    box-shadow: 2px 2px 15px  rgba(21, 14, 45, 0.997);
+   margin-bottom: 20px;
+   /* height: 170px; */
+   min-height: 150px;
+   background-color: #04155f29;
+   
+ }
+ #regdiv h4{
+   font: 17px "viga";
+   color: #ffffff;
+ }
+ #regdiv .inpstyle{
+   width: 400px;
+   height: 40px;
+   font: 16px "viga";
+   color: rgba(0, 0, 0, 0.763);
+   background-color: white;
+   border-radius: 5px;
+   padding-left: 5px;
+ }
+/* courese */
+#profile-course{
+    padding:0 30px 0 0;
+     background-color: white;
+     font-family: "viga";
+    margin-left: 240px;
+    width: 1250px;
+}
+#profile-course form input{
+   width: 1000px;
+}

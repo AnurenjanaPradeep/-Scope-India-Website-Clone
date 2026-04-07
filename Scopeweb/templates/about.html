@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\style1.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Scope India</title>
+</head>
+<body>
+    
+    <div id="float_icons">
+        <a href="#"><img src="{% static 'images\gallery-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\instagram-scope-india.png' %}"></a>
+        <a href="#"><img src="{% static 'images\callnow-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\whatsapp-scope-india.webp' %}"></a>
+        
+    </div>
+    <section id="container_navigation">
+        <div id="logo">
+            <a href="{% url 'home' %}"><img src="{%static 'images\scopeindia-logo.webp'%}">
+            </a>
+        </div>
+        
+        <div id="nav_attr">
+            <nav>
+                
+                    
+                         <a href="{% url 'home' %}" >HOME</a>
+                    
+                         <a href="{% url 'courses' %}">COURSES</a>
+                    
+                         <a id ="reg" href="{% url 'registration' %}">REGISTRATION</a>
+                    
+                         <a href="">PLACEMENTS</a>
+                    
+                         <a href="" class="active" >ABOUT US</a>
+                    
+                         <a href="">FAQ</a>
+                   
+                    
+                        <a href="{% url 'contact' %}">CONTACT US</a>
+                        {% if request.COOKIES.key %}
+                            <a href="{% url 'dashboard' %}">DASHBOARD</a>
+                        {% else %}
+                            <a href="{% url 'studentlogin' %}">LOGIN</a>
+                        {% endif %}
+                   
+              
+            </nav>
+            <div id="rate">
+            <a href="">
+                <img src="{%static 'images\google-rating-scope-india.webp'%}">
+            </a>
+        </div>
+        </div>
+        </section>
+        <section id="texts_nav">
+            <div id="texts">
+         <h1>
+           Know About SCOPE INDIA 
+        </h1>
+       <div id="cert_companies">
+                <h4>
+                    Get Globally Certified from SCOPE INDIA
+                </h4>
+                <div id="grid_images">
+                <img src="{%static 'images/microsoft.png' %}" alt="">
+                <img src="{%static 'images/ibm.png' %}" alt="">
+                <img src="{%static 'images/google.png' %}" alt="">
+                <img src="{%static 'images/amazon.png' %}" alt="">
+                <img src="{%static 'images/redhat.png' %}" alt="">
+                <img src="{%static 'images/istqb.png' %}" alt="" style="width: 142px;height: 47.51px;">
+                <img src="{%static 'images/cisco.png' %}" alt="" style="width: 142px;height: 47.51px;">
+                <img src="{%static 'images/github.png' %}" alt=""> 
+                </div>
+
+            </div>
+        </div>
+        </section>
+        <section id="about_us">
+            <div id="about_txt">
+            <h2>
+                SCOPE INDIA, your career partner!
+            </h2>
+            <h3>
+                One of India's best Training destinations for Software, Networking, DevOps and Cloud Computing courses with 18 years of Industrial experience. Over 1,000 students find<br/> their dream careers each year, and we have assisted more than 15,000 students so far.
+            </h3>
+            <p id="abt">
+                Software, Networking, and Cloud Professional Education Centre in Kerala and Tamil Nadu from <span>Suffix E Solutions</span> with WORKING PROFESSIONALS oriented on-the-job TRAINING model. SCOPE INDIA provides courses for <span>Software Programming</span> in Python (Data Science | Artificial Intelligence | Machine Learning | Deep Learning, Data Analytics), Java, PHP, .Net, MERN, Software Testing Manual and Automation, <span>Cloud Computing</span> (AWS | Azure), <span>Server Administration</span> (MicroSoft MCSE | Linux RHCE), Networking (CCNA), DevOps, <span>Mobile App Development</span> in Flutter, and <span>Digital Marketing</span>. A Training with a 100% Trusted Job-Based Internship Model. SCOPE INDIA has a Strong Placement Cell that provides jobs to thousands of students annually. We assure you, you won't regret it after training from SCOPE INDIA!
+            </p><br/>
+            <p>
+                This is how SCOPE INDIA can support both newbies and those experienced in the industry to upgrade their skills.
+            </p>
+            <span>
+                <img src="{% static 'images/5star.webp' %}">
+                <p>
+                    Google 4.9 * Rated Institute
+                </p>
+            </span>
+            </div>
+            <div id="ourstory">
+                <h2>
+                    Our Story
+                </h2>
+                <div id="line"></div>
+                <div id="ourstory_grid">
+                    <div id="content_left">
+                    <div id="foundation">
+                        <h3>
+                            Founded in 2007
+                        </h3>
+                        <p>
+                            With over two decades of experience creating extensive internet systems, Suffix E Solutions is a top provider of networking and software services. By concentrating on our clients' primary needs, we provide dependable and useful solutions that are suited to their specifications. From documentation and framework design to coding, testing, and continuing maintenance, we have experience with every stage of the development lifecycle. Our knowledgeable engineers, who have 18 years of experience in a variety of fields, offer detailed direction at every stage of the development process. Our vast knowledge base enables us to provide our clients with accurate and efficient solutions.
+                        </p>
+                      
+                        <img src="{% static 'images/scope-india-iso-certified.webp'%}">                     
+                        
+                    </div>
+                    <div class="evo">
+                        <h3>
+                            Evolution
+                        </h3>
+                        <p>
+                            SCOPE INDIA was launched in 2015 by Suffix E Solutions to address the growing demand for industry-relevant IT training under proficient working professionals. What began as a mission to bridge the gap between education and employment has grown into one of the most recognized names in tech education.
+                        </p>
+                    </div>
+                    <div class="evo">
+                        <h3>
+                            Growth
+                        </h3>
+                        <p>
+                            SCOPE INDIA began its journey in Trivandrum in 2015 and has steadily grown into a multi-location training powerhouse. In 2019, we expanded to Kochi to support more aspiring professionals. In 2021, the Nagercoil branch was proudly launched, and in 2023, we launched our Technopark branch - bringing our high-quality training even closer to the heart of Kerala's IT hub. Each branch reflects our commitment to making world-class IT education accessible to more people.
+                        </p>
+
+                    </div>
+                    </div>
+                    <div id="content_right">
+                    <div id="gif">
+                        <img src="{% static 'images\team-animation.gif' %}" width="640px" height="">
+                    </div>
+                    <div id="wrapper">
+  <div id="high_light"></div>
+
+  <div id="high">
+    <div class="iconbox_">
+      <div class="ssvg">
+        <!-- Student SVG -->
+        <svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 544.316 544.316">
+          <g>
+            <g stroke="rgb(37 99 235 / 1)">
+              <path d="M272.164,340.276L89.452,274.884l0.625,119.831c0,0,85.447,43.077,182.087,43.077
+                  c100.907,0,182.718-50.808,182.718-50.808l-0.76-112.006L272.164,340.276z" fill="rgb(37 99 235 / 1)"/>
+              <polygon points="510.149,229.122 544.316,216.616 272.164,106.524 0,216.616 272.164,316.279 489.527,236.677 489.527,352.607 
+                  475.795,352.607 475.795,408.354 521.312,408.354 521.312,352.607 510.149,352.607" fill="rgb(37 99 235 / 1)"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <h4>15000+</h4>
+        <p>Students are Placed</p>
+      </div>
+    </div>
+
+    <div class="iconbox_">
+      <div class="ssvg">
+        <!-- Building SVG -->
+         <svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>building_3_line</title>
+    <g id="页面-1" stroke="" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Building" transform="translate(-336.000000, 0.000000)" fill-rule="nonzero">
+            <g id="building_3_line" transform="translate(336.000000, 0.000000)">
+                <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fill-rule="nonzero">
+
+</path>
+                <path d="M17,2 C18.1046,2 19,2.89543 19,4 L19,20 C19.5523,20 20,20.4477 20,21 C20,21.5523 19.5523,22 19,22 L5,22 C4.44772,22 4,21.5523 4,21 C4,20.4477 4.44772,20 5,20 L5,4 C5,2.89543 5.89543,2 7,2 L17,2 Z M17,4 L7,4 L7,20 L9,20 L9,14.5 C9,13.7203294 9.59488554,13.0795543 10.3555395,13.0068668 L10.5,13 L13.5,13 C14.2796706,13 14.9204457,13.5949121 14.9931332,14.3555442 L15,14.5 L15,20 L17,20 L17,4 Z M13,15 L11,15 L11,20 L13,20 L13,15 Z M10,9 C10.5523,9 11,9.44772 11,10 C11,10.5523 10.5523,11 10,11 C9.44772,11 9,10.5523 9,10 C9,9.44772 9.44772,9 10,9 Z M14,9 C14.5523,9 15,9.44772 15,10 C15,10.5523 14.5523,11 14,11 C13.4477,11 13,10.5523 13,10 C13,9.44772 13.4477,9 14,9 Z M10,6 C10.5523,6 11,6.44772 11,7 C11,7.55228 10.5523,8 10,8 C9.44772,8 9,7.55228 9,7 C9,6.44772 9.44772,6 10,6 Z M14,6 C14.5523,6 15,6.44772 15,7 C15,7.55228 14.5523,8 14,8 C13.4477,8 13,7.55228 13,7 C13,6.44772 13.4477,6 14,6 Z" id="形状" fill="rgb(37 99 235 / 1)">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+        <!-- (your second SVG here) -->
+      </div>
+      <div>
+        <h4>500+</h4>
+        <p>Partner Companies</p>
+      </div>
+    </div>
+
+    <div class="iconbox_">
+      <div class="ssvg">
+        <!-- User-check SVG -->
+         <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.5 8.5C8.5 6.56625 10.0662 5 12 5C13.9338 5 15.5 6.56625 15.5 8.5C15.5 10.4338 13.9338 12 12 12C10.0662 12 8.5 10.4338 8.5 8.5Z" fill="rgb(37 99 235 / 1)"/>
+        <path d="M12 13.75C9.66375 13.75 5 14.9225 5 17.25V19H19V17.25C19 14.9225 14.3363 13.75 12 13.75Z" fill="rgb(37 99 235 / 1)"/>
+        <path d="M21.4025 8.58002L21.99 9.17168L18.6567 12.505L16.99 10.8425L17.5817 10.255L18.6567 11.3259L21.4025 8.58002Z" fill="rgb(37 99 235 / 1)"/>
+        </svg>
+        <!-- (your third SVG here) -->
+      </div>
+      <div>
+        <h4>100%</h4>
+        <p>Placement Assistance</p>
+      </div>
+    </div>
+  </div>
+</div>
+                    <div class="evo" style="width: 600px;">
+                        <h3>
+                            Present Day Impact
+                        </h3>
+                        <p>
+                            SCOPE INDIA has helped 15,000+ students build successful careers in IT. From fresh graduates to working professionals, our alumni are now placed in reputed companies across India and abroad, thanks to our dedicated placement support and industry-driven training. The team adopts all contemporary technologies from time to time, including Data Science, Artificial Intelligence, Cloud Computing, DevOps, etc.
+                        </p>
+
+                    </div>
+                        </div>
+                </div>
+            </div>
+          
+            
+        </section>
+        <div id="misson_vision">
+               <div id="sub_m_v">
+                    <h2>
+                        Our Mission & Vision
+                    </h2>
+                     <div class="full-stack-grid">
+                    <div class="content_missionandvission">
+                        <div id="svgg">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.08913 13.2799H9.17913V20.4799C9.17913 22.1599 10.0891 22.4999 11.1991 21.2399L18.7691 12.6399C19.6991 11.5899 19.3091 10.7199 17.8991 10.7199H14.8091V3.5199C14.8091 1.8399 13.8991 1.4999 12.7891 2.7599L5.21913 11.3599C4.29913 12.4199 4.68913 13.2799 6.08913 13.2799Z" stroke="#ffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </div><br/>
+                        <h3>Our Mission</h3><br/>
+                        
+                        <p>
+                            SCOPE INDIA seeks to close the knowledge gap between education and employment by offering interactive, industry-focused IT training led by proficient working professionals and aligned with the latest trends and technologies. Our objective is to provide people with the technical expertise and confidence they need to build fulfilling careers.
+                        </p><br/>
+                        <ul >
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Industry-aligned curriculum</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Practical skill development</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Career-focused training</li>
+                            
+
+                        </ul>
+                    </div>
+                    <div class="content_missionandvission">
+                        <div id="svgg">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="8" r="3" stroke="#ffff" stroke-width="2" stroke-linecap="round"/>
+<path d="M15.2679 8C15.5332 7.54063 15.97 7.20543 16.4824 7.06815C16.9947 6.93086 17.5406 7.00273 18 7.26795C18.4594 7.53317 18.7946 7.97 18.9319 8.48236C19.0691 8.99472 18.9973 9.54063 18.7321 10C18.4668 10.4594 18.03 10.7946 17.5176 10.9319C17.0053 11.0691 16.4594 10.9973 16 10.7321C15.5406 10.4668 15.2054 10.03 15.0681 9.51764C14.9309 9.00528 15.0027 8.45937 15.2679 8L15.2679 8Z" stroke="#ffff" stroke-width="2"/>
+<path d="M5.26795 8C5.53317 7.54063 5.97 7.20543 6.48236 7.06815C6.99472 6.93086 7.54063 7.00273 8 7.26795C8.45937 7.53317 8.79457 7.97 8.93185 8.48236C9.06914 8.99472 8.99727 9.54063 8.73205 10C8.46683 10.4594 8.03 10.7946 7.51764 10.9319C7.00528 11.0691 6.45937 10.9973 6 10.7321C5.54063 10.4668 5.20543 10.03 5.06815 9.51764C4.93086 9.00528 5.00273 8.45937 5.26795 8L5.26795 8Z" stroke="#ffff" stroke-width="2"/>
+<path d="M16.8816 18L15.9013 18.1974L16.0629 19H16.8816V18ZM20.7202 16.9042L21.6627 16.5699L20.7202 16.9042ZM14.7808 14.7105L14.176 13.9142L13.0194 14.7927L14.2527 15.5597L14.7808 14.7105ZM19.8672 17H16.8816V19H19.8672V17ZM19.7777 17.2384C19.7707 17.2186 19.7642 17.181 19.7725 17.1354C19.7804 17.0921 19.7982 17.0593 19.8151 17.0383C19.8474 16.9982 19.874 17 19.8672 17V19C21.0132 19 22.1414 17.9194 21.6627 16.5699L19.7777 17.2384ZM17 15C18.6416 15 19.4027 16.1811 19.7777 17.2384L21.6627 16.5699C21.1976 15.2588 19.9485 13 17 13V15ZM15.3857 15.5069C15.7702 15.2148 16.282 15 17 15V13C15.8381 13 14.9028 13.3622 14.176 13.9142L15.3857 15.5069ZM14.2527 15.5597C15.2918 16.206 15.7271 17.3324 15.9013 18.1974L17.8619 17.8026C17.644 16.7204 17.0374 14.9364 15.309 13.8614L14.2527 15.5597Z" fill="#ffff"/>
+<path d="M9.21918 14.7105L9.7473 15.5597L10.9806 14.7927L9.82403 13.9142L9.21918 14.7105ZM3.2798 16.9041L4.22227 17.2384L4.22227 17.2384L3.2798 16.9041ZM7.11835 18V19H7.93703L8.09867 18.1974L7.11835 18ZM7.00001 15C7.71803 15 8.22986 15.2148 8.61433 15.5069L9.82403 13.9142C9.09723 13.3621 8.1619 13 7.00001 13V15ZM4.22227 17.2384C4.59732 16.1811 5.35842 15 7.00001 15V13C4.0515 13 2.80238 15.2587 2.33733 16.5699L4.22227 17.2384ZM4.13278 17C4.126 17 4.15264 16.9982 4.18486 17.0383C4.20176 17.0593 4.21961 17.0921 4.22748 17.1354C4.2358 17.181 4.22931 17.2186 4.22227 17.2384L2.33733 16.5699C1.85864 17.9194 2.98677 19 4.13278 19V17ZM7.11835 17H4.13278V19H7.11835V17ZM8.09867 18.1974C8.27289 17.3324 8.70814 16.206 9.7473 15.5597L8.69106 13.8614C6.96257 14.9363 6.356 16.7203 6.13804 17.8026L8.09867 18.1974Z" fill="#ffff"/>
+<path d="M12 14C15.5715 14 16.5919 16.5512 16.8834 18.0089C16.9917 18.5504 16.5523 19 16 19H8C7.44772 19 7.00829 18.5504 7.11659 18.0089C7.4081 16.5512 8.42846 14 12 14Z" stroke="#ffff" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                        </div><br/>
+                        <h3>Our Vision</h3><br/>
+                        <p>
+                            
+                            We aspire to become the most respected and forward-thinking training organization in India and beyond by shaping the future of IT education via innovation, integrity, and strong industry ties. We intend to expand globally.
+                        </p><br/>
+                            <ul >
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Global recognition</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Innovation leadership</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>Technology excellence</li>
+                            
+
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+         <div id="footer">
+                <p>
+                    We are located at Technopark TVM | Thampanoor TVM | Kochi, Kerala | Nagercoil, Tamil Nadu
+                </p>
+                <p style=" margin-right:50px;margin-left: 40px;">
+                    <a href="">9745936073 (TPK)</a>
+                    <a href="">9745936073 (TVM)</a>
+                    <a href="">7592939481 (EKM)</a>
+                    <a href="">8075536185 (NGL)</a>
+                    <a href="">info@scopeindia.org</a>
+                </p>
+                <p id="footer_tag">
+                    All Rights Reserved 
+                    <a href="">SCOPE INDIA & SUFFIX E SOLUTIONS PRIVATE LIMITED</a>
+                    <a>&copy;2007-2025</a>
+                    <span>|</span>
+                    <a>Privacy Policy</a>
+                    <span>|</span>
+                    <a>Blog</a>
+                </p>
+            </div>
+</body>
+</html>

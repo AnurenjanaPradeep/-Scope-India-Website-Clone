@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <title>Document</title>
+    <style>
+        
+    #popup-container {
+    position: fixed;
+    top: 30px;
+    margin-left: 45%;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Popup box */
+.popup {
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: popin 1s forwards;
+}
+
+/* Colors based on message type */
+.popup.info {
+    background: #10224f;
+}
+.popup.success {
+    background: #06a026;
+}
+.popup.warning {
+    background: #e0a400;
+}
+.popup.error {
+    background: #cc0000;
+}
+
+/* Smooth animation */
+@keyframes popin {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+#profile-course{
+    
+     background-color: white;
+     font-family: "viga";
+    margin-left: 230px;
+    width: 1200px;
+    height: 659px;
+    padding: 30px 0px 30px 50px;
+}
+#profile-course form input{
+   width: 1000px;
+   height: 35px;
+   border-radius: 20px;
+}
+#profile-course form button{
+    padding: 5px;
+    border-radius: 50px;
+}
+.corse_di{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 150px;
+    margin-top: 10px;
+    padding: 20px;
+    /* border: 2px solid; */
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 4px grey;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+.corse_di:hover{
+    background-color: rgb(233, 232, 221);
+    transform: scale(1.05);
+}
+.dashcourse_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1000px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.course_dash h2{
+    margin: 20px 0px;
+    color: #10224f;
+}
+.corse_di h3{
+    margin-bottom: 15px;
+    color: #b9984a;
+}
+.corse_di h5{
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.corse_di button{
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #2c2a73;
+    color: #b9984a;
+    font: 15px "viga";
+    transition: all 1s ease;
+   
+}
+.corse_di button:hover{
+    background-color: #b9984a;
+    color:#242332;
+    
+
+}
+#filter{
+    padding: 10px 5px;
+}
+#filter ul{
+    display:inline-flex;
+    
+}
+#filter li{
+    margin-left: 5px;
+    list-style: none;
+}
+#filter a{
+    text-decoration: none;
+    color:#9ca7c2;
+    padding: 5px;
+}
+#filter a:hover{
+    color: #000000;
+}
+#filter a.active{
+    color: #000000;
+}
+.dura{
+    display: inline-flex;
+}
+.fee{
+    display: flex;
+}
+.dura h5{
+    color: #415b9c;
+}
+.fee h5{
+    color: #415b9c;
+}
+.corse_di button{
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #2c2a73;
+    color: #b9984a;
+    font: 15px "viga";
+    transition: all 1s ease;
+   
+}
+.corse_di a{
+    text-decoration: none;
+    color: #b9984a;
+    font: 15px "viga";
+}
+    </style>
+</head>
+<body >
+    <div id="popup-container">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="popup {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+    <section class="stu_dashboard"style="background-color: white;">
+        <div>
+           <div id="float_icons">
+        <a href="#"><img src="{% static 'images\gallery-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\instagram-scope-india.png' %}"></a>
+        <a href="#"><img src="{% static 'images\callnow-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\whatsapp-scope-india.webp' %}"></a>
+        
+    </div>
+   
+        <div class="grid-dash" style="display: grid;grid-template-columns: auto auto;">
+        <div id="container_navigation2">
+             <a href="{% url 'home' %}"><img width="200px" src="{%static 'images\scopeindia-logo.webp'%}"></a>
+            <ul id="nav_ul">
+                <li>
+                    
+                     <a href="{% url 'dashboard' %}" >PROFILE</a>
+                   
+                </li>
+                <li>
+                     <a href="{% url 'course_search' %}" class="active" >COURSE</a>
+                </li>
+                 <li>
+                     <a href="{% url 'home' %}" >HOME</a>
+                </li>
+                <li style="margin-top:300px ;">
+                    <a href="{% url 'studentlogin' %}"> LOGOUT</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="profile-course">
+            <div id="filter">
+            <ul>
+                <li>
+                    <a href="{% url 'my_course' %}" class="active" style="border-right: 1px solid;">My courses</a>
+                </li>
+                <li>
+                    <a href="{% url 'course_search' %}">All courses</a>
+                </li>
+            </ul>
+        </div>
+            <div class="course_dash">
+                <h2>
+                   Enrolled Courses
+                </h2>
+                 <div class="dashcourse_grid">
+                
+                {% for course in course %}
+                
+                
+                <div class="corse_di">
+                    <h3>
+                        
+                        {{course.course_name}}
+                       
+                    </h3>
+                    <div class="dura">
+                     <h5>Course duration:</h5>
+                     <p>{{course.duration}}</p>
+                     </div>
+
+                     <div class="fee">
+                     <h5>Fees:</h5>
+                     <p>{{course.fee}}</p>
+                     </div>
+                         <button type="submit" >
+                        <a href="cancelenroll/{{course.id}}">UnEnroll</a></button>
+                    </div>
+                    
+                
+               
+                {%endfor%}
+                </div>
+              
+            </div>
+           
+            </div>         
+      
+        </div>
+           
+       
+        </div>
+    </section>
+    <script>
+    setTimeout(function() {
+        let popups = document.querySelectorAll(".popup");
+        popups.forEach(function(popup) {
+            popup.style.transition = "all 0.5s ease";
+            popup.style.opacity = "0";
+            popup.style.transform = "translateY(-20px)";
+            setTimeout(() => popup.remove(), 300);
+        });
+    }, 3000);  // Close after 3 sec
+</script>
+</body>
+</html>

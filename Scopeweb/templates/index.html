@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\style1.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Scope India</title>
+</head>
+<body>
+    
+    <div id="float_icons">
+        <a href="#"><img src="{% static 'images\gallery-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\instagram-scope-india.png' %}"></a>
+        <a href="#"><img src="{% static 'images\callnow-scope-india.webp' %}"></a>
+        <a href="#"><img src="{% static 'images\whatsapp-scope-india.webp' %}"></a>
+        
+    </div>
+    <section id="container_navigation">
+        <div id="logo">
+            <a href="{% url 'home' %}"><img src="{%static 'images\scopeindia-logo.webp'%}"></a>
+        </div>
+        
+        <div id="nav_attr">
+            <nav>
+                <a href="" class="active">HERO</a>
+                <a href="{% url 'courses' %}">COURSES</a>
+                <a id ="reg" href="{% url 'registration' %}">REGISTRATION</a>
+                <a href="">PLACEMENTS</a>
+                <a href="{% url 'about' %}">ABOUT US</a>
+                <a href="">FAQ</a>
+                
+                <a href="{% url 'contact' %}">CONTACT US</a>
+                {% if request.COOKIES.key %}
+                    <a href="{% url 'dashboard' %}">DASHBOARD</a>
+                {% else %}
+                    <a href="{% url 'studentlogin' %}">LOGIN</a>
+                {% endif %}
+            </nav>
+            <div id="rate">
+            <a href="">
+                <img src="{%static 'images\google-rating-scope-india.webp'%}">
+            </a>
+        </div>
+        </div>
+        </section>
+        <div id="texts">
+         <h1>
+            Your career partner!
+        </h1>
+       <h2>
+            Center for Software,Networking, & Cloud Education
+        </h2>
+        <h3>
+            One of India's best Training destinations for Software, Networking, DevOps and Cloud Computing courses with 18 years of Industrial experience. Over 1,000 students find their dream careers each year, and we have assisted more than 15,000 students so far.
+        </h3>
+        </div>
+        <div id="cert_companies">
+                <h4>
+                    Get Globally Certified from SCOPE INDIA
+                </h4>
+                <div id="grid_images">
+                <img src="{%static 'images/microsoft.png' %}" alt="">
+                <img src="{%static 'images/ibm.png' %}" alt="">
+                <img src="{%static 'images/google.png' %}" alt="">
+                <img src="{%static 'images/amazon.png' %}" alt="">
+                <img src="{%static 'images/redhat.png' %}" alt="">
+                <img src="{%static 'images/istqb.png' %}" alt=""" style="width: 142px;height: 47.51px;">
+                <img src="{%static 'images/cisco.png' %}" alt="" style="width: 142px;height: 47.51px;">
+                <img src="{%static 'images/github.png' %}" alt=""> 
+                </div>
+
+            </div>
+            <div id="career" >
+                <div class="parent">
+
+                
+                <h2>
+                    Dreaming about a career in IT
+                </h2>
+                <div id="asawhole">
+                <div id="career_txt">
+                <p>
+                    Spearheaded by the working professionals of Suffix E Solutions in flexible<br/> learning mode, we provide quality training with 100% placement support.
+                </p>
+                <p>
+                    We provide comprehensive courses in:
+                </p>
+                
+                <ul class="career_txt_grid">
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Software Programming</a></li>
+                     <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">DevOps</a></li>
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Data Science & AI</a></li>
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Software Testing</a></li>
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Data Analytics</a></li>
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Server Administration</a></li>
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Cloud Computing</a></li>
+                     <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">NetWorking</a></li>
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Mobile App Development</a></li>
+                    <li>
+                        <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                        <a href="">Digital Marketing</a></li>
+                   
+                </ul>
+               
+                </div>
+                <div id="itsaflyer">
+                <div class="flyer1">
+                    <h3>
+                        Classes
+                    </h3><br/>
+                    <p>
+                        Learn Anywhere, Anytime - Online & in-Person Classes Available!
+                    </p>
+                </div>
+                <div class="flyer1">
+                    <h3>
+                        Placement
+                    </h3><br/>
+                    <p>
+                        Guaranteed Success -100% Placement Support
+                    </p>
+                </div>
+                <div class="flyer2">
+                    <h3>
+                       Training
+                    </h3><br/>
+                    <p>
+                       Training by Working Professionals of Suffix E Solutions
+                    </p>
+                </div>
+                <div class="flyer2">
+                    <h3>
+                        Internship
+                    </h3><br/>
+                    <p>
+                        OJT (On the Job Training) under<br/> Suffix E Solutions after course <br/>completion with experience<br/> certificate
+                    </p><br/>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div id="placement_highlights">
+
+                <div id="plhigh">
+                <h2 style="margin: 30px;">
+                    Placement Hightlights
+                </h2>
+                <div class="highlights_grid">
+                    <div>
+                        <span>
+                            100%
+                        </span>
+                        <p>
+                            Placement Assistance
+                        </p>
+                    </div>
+                    <div>
+                        <span>
+                           1000+
+                        </span>
+                        <p>
+                           Students are Getting Placed Every Year
+                        </p>
+                    </div>
+                    <div>
+                        <span>
+                            500+
+                        </span>
+                        <p>
+                            Partner Companies
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ai_study" >
+                <div class="parent">
+                    <h2>
+                        Match the Pace of Artificial Intelligence
+                    </h2>
+                    <h3>
+                        Study AI From SCOPE INDIA
+                    </h3>
+                    <div id="AI_grid">
+                        <div id="ai_bk">
+                            <img id="robo"  src="{% static 'images\robo-scope-site.webp'%}">
+                        </div>
+                        <div id="ai_courseplan">
+                            <ul class="ai_txt_grid">
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        Python 3.12
+                                    </a>
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        SQL
+                                    </a>
+                                </li>
+                                <li>
+                                   <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        Pandas
+                                    </a>
+                                </li>
+                                <li>
+                                   <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        NumPy
+                                    </a>
+                                </li>
+                                <li>
+                                  <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        Matplotlib and Seaborn
+                                    </a>
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                      Tableau  
+                                    </a>
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        Excel & Power BI
+                                    </a>
+                                </li>
+                                <li>
+                                   <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        Django & REST Services
+                                    </a>
+                                </li>
+                                <li>
+                                   <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                      Machine Learning  
+                                    </a>
+                                </li>
+                                <li>
+                                  <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                        Deep Learning & AI
+                                    </a>
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                   
+                                    <a href="">
+                                       English Language Training
+                                    </a>
+                                </li>
+                                <li>
+                                   <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    <a href="">
+                                      Live Projects
+                                    </a>
+                                </li>
+                            </ul>
+                
+                        </div>
+                    </div>
+                    <p>
+                        Harness the capabilities of machine learning, deep learning, natural language processing and uncover hidden patterns, optimize processes, and drive smarter decision-making.
+                    </p>
+                </div>
+            </div>
+            <!-- ----------------------------------Full stack--------------------------------- -->
+            <div class="full-stack">
+                
+            <div class="parent">
+                <h2>
+                    Become a Full Stack Developer
+                </h2>
+                <div class="full-stack-grid">
+                <div id="full">
+                     <h3>Your pathway includes</h3>
+                    <div id="pathway">
+                        <a href="">
+                        <ol>
+                            
+                            <li>
+                                <span>1</span>
+                                <div class="sub">
+                                <h4>
+                                    Foundation
+                                </h4><br/>
+                                <p >
+                                  Programming Fundamentals,SQL
+                                </p>
+                                </div>
+                            
+                            </li>
+                            
+                            <li>
+                                <span>2</span>
+                                <div class="sub">
+                                <h4 >
+                                   Front End 
+                                </h4><br/>
+                                <p >
+                                    HTML,CSS,JavaScript,JQuery,Bootstap,React JS
+                                </p>
+                                </div>
+                            </li>
+                             <li>
+                                <span>3</span>
+                                <div class="sub">
+                                <h4>
+                                   Back End 
+                                </h4><br/>
+                                <p >
+                                   Python/Java/ASP.NET/JavaScript
+                                </p>
+                                <br/>
+                            </li>
+                        </ol>
+                        </a>
+                    </div>
+                    </div>
+                    <div id="imge">
+                         <img src="{% static 'images\full-stack-course-scopeindia.webp'%}">
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+            <!-- --------------------------------Testing----------------------------------- -->
+            <div class="no_coding" >
+                <div class="parent">
+                    <h2>
+                        <span>No Coding</span> Prowess?<span> Not a Problem</span>
+                    </h2>
+                    <div class="full-stack-grid">
+                        <img src="{% static 'images\software-testing-course-scopeindia.webp' %}">
+                        <div class="testingcontent">
+                            <a href="">
+                            <h3>
+                                Software Testing is the Gateway to Your IT Career
+                            </h3>
+                            <div class="comm_grid">
+                                <ul>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Manual Testing
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Automation Testing
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Practical Sessions
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                        Theoretical Sessions
+                                        </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Flexible Shedules
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    On Job Training
+                                </li>
+                                </ul>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h2 style="font-size: 22px;font-weight: normal  ;">
+                        Start your tech journey today with <span>SCOPE INDIA</span> and make your mark in the IT industry!
+                    </h2>
+                </div>
+
+            </div>
+            <!-- ---------------------------------Devops------------------------------------------------------------ -->
+            <div id="devops">
+                <div class="parent">
+                    <h2>
+                        Career with DevOps
+                    </h2>
+                    <div class="full-stack-grid">
+                        <div id="dev_grid" >
+                            <a href="">
+                            <h4>
+                                Master DevOps From SCOPE INDIA
+                            </h4>
+                            <ul>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Build Applications
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Deploy Applications
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Automate Workflows
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Hands-on Experience
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Popular Tools
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Cloud Infrastructure
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Cloud Management
+                                </li>
+                                <li>
+                                    <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Deployement Strategies
+                                </li>
+                            </ul>
+                            </a>
+                            
+                        </div>
+                        <img src="{% static 'images\devops-course-scope-india.webp' %}">
+                    
+                    </div>
+               </div>
+            </div>
+            <!-- -----------------------------------------------------Business Inteligence---------------------------------------------------------------------------- -->
+            <div id="business_intelligence">
+                <div class="parent">
+                    
+                    <h2>
+                        Match the Pace of Business Intelligence
+                    </h2>
+                    <div id="subt_m_v">
+                    <div class="full-stack-grid">
+                        <img src="{% static 'images/power-bi-course-scopeindia.webp' %}">
+                         <div class="testingcontent">
+                            <a href="">
+                            <h4>
+                            Study Power BI From SCOPE INDIA
+                        </h4>
+                        
+                        <div class="comm_grid">
+                            
+                                <ul>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                   Transform Raw Data
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Hands-on Training
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Practical Sessions
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                        Real-World Scenarios
+                                        </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    Flexible Shedules
+                                </li>
+                                <li>
+                                     <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                    On Job Training
+                                </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ------------------------------------------------------------mission & vision----------------------------------------------------------------------------------------- -->
+            <div id="misson_vision">
+               <div id="sub_m_v">
+                    <h2>
+                        Our Mission & Vision
+                    </h2>
+                     <div class="full-stack-grid">
+                    <div class="content_missionandvission">
+                        <div id="svgg">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.08913 13.2799H9.17913V20.4799C9.17913 22.1599 10.0891 22.4999 11.1991 21.2399L18.7691 12.6399C19.6991 11.5899 19.3091 10.7199 17.8991 10.7199H14.8091V3.5199C14.8091 1.8399 13.8991 1.4999 12.7891 2.7599L5.21913 11.3599C4.29913 12.4199 4.68913 13.2799 6.08913 13.2799Z" stroke="#ffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </div><br/>
+                        <h3>Our Mission</h3><br/>
+                        
+                        <p>
+                            SCOPE INDIA seeks to close the knowledge gap between education and employment by offering interactive, industry-focused IT training led by proficient working professionals and aligned with the latest trends and technologies. Our objective is to provide people with the technical expertise and confidence they need to build fulfilling careers.
+                        </p><br/>
+                        <ul >
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Industry-aligned curriculum</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Practical skill development</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Career-focused training</li>
+                            
+
+                        </ul>
+                    </div>
+                    <div class="content_missionandvission">
+                        <div id="svgg">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="8" r="3" stroke="#ffff" stroke-width="2" stroke-linecap="round"/>
+<path d="M15.2679 8C15.5332 7.54063 15.97 7.20543 16.4824 7.06815C16.9947 6.93086 17.5406 7.00273 18 7.26795C18.4594 7.53317 18.7946 7.97 18.9319 8.48236C19.0691 8.99472 18.9973 9.54063 18.7321 10C18.4668 10.4594 18.03 10.7946 17.5176 10.9319C17.0053 11.0691 16.4594 10.9973 16 10.7321C15.5406 10.4668 15.2054 10.03 15.0681 9.51764C14.9309 9.00528 15.0027 8.45937 15.2679 8L15.2679 8Z" stroke="#ffff" stroke-width="2"/>
+<path d="M5.26795 8C5.53317 7.54063 5.97 7.20543 6.48236 7.06815C6.99472 6.93086 7.54063 7.00273 8 7.26795C8.45937 7.53317 8.79457 7.97 8.93185 8.48236C9.06914 8.99472 8.99727 9.54063 8.73205 10C8.46683 10.4594 8.03 10.7946 7.51764 10.9319C7.00528 11.0691 6.45937 10.9973 6 10.7321C5.54063 10.4668 5.20543 10.03 5.06815 9.51764C4.93086 9.00528 5.00273 8.45937 5.26795 8L5.26795 8Z" stroke="#ffff" stroke-width="2"/>
+<path d="M16.8816 18L15.9013 18.1974L16.0629 19H16.8816V18ZM20.7202 16.9042L21.6627 16.5699L20.7202 16.9042ZM14.7808 14.7105L14.176 13.9142L13.0194 14.7927L14.2527 15.5597L14.7808 14.7105ZM19.8672 17H16.8816V19H19.8672V17ZM19.7777 17.2384C19.7707 17.2186 19.7642 17.181 19.7725 17.1354C19.7804 17.0921 19.7982 17.0593 19.8151 17.0383C19.8474 16.9982 19.874 17 19.8672 17V19C21.0132 19 22.1414 17.9194 21.6627 16.5699L19.7777 17.2384ZM17 15C18.6416 15 19.4027 16.1811 19.7777 17.2384L21.6627 16.5699C21.1976 15.2588 19.9485 13 17 13V15ZM15.3857 15.5069C15.7702 15.2148 16.282 15 17 15V13C15.8381 13 14.9028 13.3622 14.176 13.9142L15.3857 15.5069ZM14.2527 15.5597C15.2918 16.206 15.7271 17.3324 15.9013 18.1974L17.8619 17.8026C17.644 16.7204 17.0374 14.9364 15.309 13.8614L14.2527 15.5597Z" fill="#ffff"/>
+<path d="M9.21918 14.7105L9.7473 15.5597L10.9806 14.7927L9.82403 13.9142L9.21918 14.7105ZM3.2798 16.9041L4.22227 17.2384L4.22227 17.2384L3.2798 16.9041ZM7.11835 18V19H7.93703L8.09867 18.1974L7.11835 18ZM7.00001 15C7.71803 15 8.22986 15.2148 8.61433 15.5069L9.82403 13.9142C9.09723 13.3621 8.1619 13 7.00001 13V15ZM4.22227 17.2384C4.59732 16.1811 5.35842 15 7.00001 15V13C4.0515 13 2.80238 15.2587 2.33733 16.5699L4.22227 17.2384ZM4.13278 17C4.126 17 4.15264 16.9982 4.18486 17.0383C4.20176 17.0593 4.21961 17.0921 4.22748 17.1354C4.2358 17.181 4.22931 17.2186 4.22227 17.2384L2.33733 16.5699C1.85864 17.9194 2.98677 19 4.13278 19V17ZM7.11835 17H4.13278V19H7.11835V17ZM8.09867 18.1974C8.27289 17.3324 8.70814 16.206 9.7473 15.5597L8.69106 13.8614C6.96257 14.9363 6.356 16.7203 6.13804 17.8026L8.09867 18.1974Z" fill="#ffff"/>
+<path d="M12 14C15.5715 14 16.5919 16.5512 16.8834 18.0089C16.9917 18.5504 16.5523 19 16 19H8C7.44772 19 7.00829 18.5504 7.11659 18.0089C7.4081 16.5512 8.42846 14 12 14Z" stroke="#ffff" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                        </div><br/>
+                        <h3>Our Vision</h3><br/>
+                        <p>
+                            
+                            We aspire to become the most respected and forward-thinking training organization in India and beyond by shaping the future of IT education via innovation, integrity, and strong industry ties. We intend to expand globally.
+                        </p><br/>
+                            <ul >
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Global recognition</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>
+                                Innovation leadership</li>
+                            <li>
+                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+										</svg>Technology excellence</li>
+                            
+
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="footer">
+                <p>
+                    We are located at Technopark TVM | Thampanoor TVM | Kochi, Kerala | Nagercoil, Tamil Nadu
+                </p>
+                <p style=" margin-right:50px;margin-left: 40px;">
+                    <a href="">9745936073 (TPK)</a>
+                    <a href="">9745936073 (TVM)</a>
+                    <a href="">7592939481 (EKM)</a>
+                    <a href="">8075536185 (NGL)</a>
+                    <a href="">info@scopeindia@org</a>
+                </p>
+                <p id="footer_tag">
+                    All Rights Reserved 
+                    <a href="">SCOPE INDIA & SUFFIX E SOLUTIONS PRIVATE LIMITED</a>
+                    <a>&copy;2007-2025</a>
+                    <span>|</span>
+                    <a>Privacy Policy</a>
+                    <span>|</span>
+                    <a>Blog</a>
+                </p>
+            </div>
+        </div>
+        </section>
+        
+            
+         
+    
+</body>
+</html>
